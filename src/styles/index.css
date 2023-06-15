@@ -1,0 +1,487 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-image: url(//fullhdoboi.ru/wp-content/uploads/_ph/4/596945505.jpg);
+} */
+
+body {
+  width: 100%;
+}
+
+.mainApp-container {
+  background-image: url(//fullhdoboi.ru/wp-content/uploads/_ph/4/596945505.jpg);
+}
+
+.mainApp-content {
+  width: 70vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.mainApp-header {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background: rgb(194, 118, 11);
+}
+
+.layout-nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.exile {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  font-family: 'Geologica';
+  font-weight: 300;
+}
+
+.exile:hover {
+  color: #d3b142f3;
+}
+
+.home {
+  color: rgb(56, 16, 122);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.home:hover {
+  color: #a00603;
+}
+
+.mainApp-main {
+  height: 70vh;
+  padding: 30px 20px 0 20px;
+  background: #ffffffa6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages-text {
+  color: #a96f22;
+  font-size: 60px;
+  font-family: 'Geologica';
+  font-weight: 600;
+}
+
+.home-page {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column ;
+}
+
+.time-text {
+  max-width: 450px;
+  color: #a10909;
+  font-size: 21px;
+  font-family: 'Geologica';
+  font-weight: 500;
+}
+
+.time {
+  color: #600505;
+  font-size: 190px;
+  font-weight: 900;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.secret-text,
+.secret-link {
+  max-width: 600px;
+  color: #226ca9;
+  font-size: 22px;
+  font-family: 'Geologica';
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.secret-link {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 300;
+  margin-bottom: 0;
+  color: #228aa9;
+}
+
+.secret-link:hover {
+  color: #d00805;
+}
+
+.mainApp-footer {
+  min-height: 20vh;
+  padding: 10px 30px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  color: #db1d00;
+  font-size: 60px;
+  font-family: 'Geologica';
+  font-weight: 700;
+}
+
+
+
+
+
+/* SECRETS_SHOP!!! */
+
+.secret-container {
+  margin: 0 auto;
+  max-width: 1216px;
+}
+
+/* HEADER */
+
+.secret-header {
+  width: 100%;
+  background: #050402;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.phone,
+.mail {
+  display: flex;
+  gap: 14px;
+}
+
+.secret-home {
+  color: #ba6006;
+  font-size: 18px;
+
+}
+
+.contacts {
+  display: flex;
+  gap: 60px;
+}
+
+.contacts-data {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FAF6F2;
+  font-family: 'Jost';
+  text-decoration: none;
+}
+
+.contacts-logo {
+  display: flex;
+  align-items: center;
+  gap: 142px;
+}
+
+.profile {
+  display: flex;
+  gap: 58px;
+}
+
+.cart,
+.liked {
+  align-items: flex-end;
+}
+
+.cart:hover,
+.liked:hover {
+  cursor: pointer;
+}
+
+.cart {
+  position: relative;
+}
+
+.total_cost {
+  font-family: 'Jost';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FAF6F2;
+  font-style: normal;
+  margin-right: 9px;
+  position: relative;
+  bottom: 3px;
+}
+
+.quantityCart {
+  background: #BB8C5F;
+  padding: 0 5px 0 5px;
+  position: absolute;
+  top: -15px;
+  right: -9px;
+  /* text-align: center; */
+}
+
+.quantityCart-data {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FAF6F2;
+  position: relative;
+  top: 0.8334px;
+}
+
+/* MAIN */
+
+.secret-main {
+  width: 100%;
+  background: #EEEEEE;
+}
+
+.novelties_cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 0 40px 0;
+}
+
+.card {
+  width: 289px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  background: #F5F5F5;
+  /* box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1); */
+  position: relative;
+}
+
+.pictureComplete {
+  margin-bottom: 22px;
+}
+
+.card:hover {
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.sticking {
+  clip-path: polygon(100% 0%, 89% 49%, 100% 100%, 0 100%, 0% 50%, 0 0);
+  background: #BB8C5F;
+  width: 85px;
+  height: 29px;
+  border: 1px solid #BB8C5F;
+  border-right: none;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.like {
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  cursor: pointer;
+}
+
+.card-content {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.title {
+  width: 229px;
+  height: 48px;
+  font-family: 'Jost';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-family: 'Jost';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  font-style: normal;
+  margin-bottom: 20px;
+  color: #BB8C5F;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+}
+
+
+.pushCart-button {
+  border: 1px solid #BB8C5F;
+  border-radius: 3px;
+  background: none;
+  width: 200px;
+  height: 35px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  color: #BB8C5F;
+  font-family: 'Jost';
+}
+
+.pushCart-button:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 28px 0px rgba(34, 60, 80, 0.2) inset;
+}
+
+.pushCart-button:active {
+  box-shadow: 0px 5px 66px 11px rgba(34, 60, 80, 0.2) inset;
+  color: #F5F5F5;
+  background: #d56b09;
+}
+
+.basket {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket-content {
+  text-align: center;
+}
+
+.basket-count {
+  font-family: 'Jost';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  font-style: normal;
+}
+
+.basket-title {
+  font-family: 'Jost';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  font-style: normal;
+  color: #D0D0D0;
+}
+
+.counter button {
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid #BB8C5F;
+  cursor: pointer;
+  color: #3E424B;
+  font-family: 'Jost';
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.counter button:hover {
+  box-shadow: 0px 5px 28px 0px rgba(34, 60, 80, 0.2) inset;
+}
+
+.counter button:active {
+  box-shadow: 0px 5px 66px 11px rgba(34, 60, 80, 0.2) inset;
+}
+
+.contacts-data {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+  color: #BB8C5F;
+  font-family: 'Jost';
+  cursor: pointer;
+}
+
+a:hover {
+  color: #d87921;
+}
+
+.none {
+  display: none;
+}
+
+.cart h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #2d1703;
+  font-family: 'Jost';
+  margin-bottom: 15px;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart-cards {
+  position: absolute;
+  z-index: 100;
+  width: 500px;
+  padding: 10px;
+  background: #D0D0D0;
+  right: 20px;
+  top: 20px;
+}
+
+.cart-content {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cartCard-content {
+  background: #F5F5F5;
+  width: 150px;
+  border: 1px solid #BB8C5F;
+  padding: 5px;
+}
+
+.cartCard-content p {
+  font-family: 'Jost';
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.cartCard-content img {
+  width: 100%;
+}
