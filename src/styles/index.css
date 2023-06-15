@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-/* body {
-  background-image: url(//fullhdoboi.ru/wp-content/uploads/_ph/4/596945505.jpg);
-} */
-
 body {
   width: 100%;
 }
@@ -78,7 +74,6 @@ body {
 }
 
 .home-page {
-  max-width: 500px;
   display: flex;
   flex-direction: column ;
 }

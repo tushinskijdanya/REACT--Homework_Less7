@@ -1,36 +1,29 @@
-import { useEffect } from "react";
-
-let date = new Date();
-let hour, minutes, sec = 0;
-let m, h = 0;
-
-getDate(date);
-liveTime ();
-
-function getDate (date) {
-  hour = date.getHours();
-  minutes = date.getMinutes();
-  sec = date.getSeconds();
-}
-
-function liveTime () {
-
-    sec++
-    if (sec > 59) {
-        minutes++;
-        sec = 0;
-    }
-    if (minutes > 59) {
-        hour++;
-        minutes = 0;
-    }
-    m = minutes < 10 ? "0" + minutes : minutes;
-    h = hour < 10 ? "0" + hour : hour;
-}
+import { useEffect, useState } from "react";
 
 function Home () {
+    const date = new Date();
+    const [time, setTime] = useState ({
+        hour: date.getHours(),
+        minutes: date.getMinutes(),
+        sec: date.getSeconds()
+    })
+
+    const timer = () => {
+        setTime((prev) => {
+            let temp = {...prev};
+            const tempDate = new Date();
+            temp.hour = tempDate.getHours();
+            temp.minutes = tempDate.getMinutes();
+            temp.sec = tempDate.getSeconds();
+            return temp;
+        })
+    }
+
     useEffect(() => {
-        setInterval(liveTime, 1000);
+        const timeNow = setInterval(timer, 1000);
+        return () => {
+            clearInterval(timeNow);
+        }
     }, []);
 
     return (
@@ -38,7 +31,7 @@ function Home () {
             <p className="time-text">There is a time for everything, 
                 and a season for every activity under the heavens...
             </p>
-            <h2 className="pages-text time">{`${h}:${m}`}</h2>
+            <h2 className="pages-text time">{time.hour < 10 ? `0${time.hour}` : time.hour} : {time.minutes < 10 ? `0${time.minutes}` : time.minutes} : {time.sec < 10 ? `0${time.sec}` : time.sec}</h2>
         </div>
     )
 }
