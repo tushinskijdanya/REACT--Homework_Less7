@@ -1,7 +1,3 @@
-// import Home from "../pages/Home";
-// import About from "../pages/About";
-// import Contacts from "../pages/Contacts";
-// import NotFound from "../pages/NoneFound";
 import { Link, Outlet } from "react-router-dom";
 
 

@@ -4,7 +4,6 @@ import upper from "../data/upper-header-data";
 import ShowCart from "./Cart";
 import { Link } from "react-router-dom";
 
-
 function UpperHeader () {
     const { cards } = useContext(ThemeContext);
     console.log("cards: ", cards);

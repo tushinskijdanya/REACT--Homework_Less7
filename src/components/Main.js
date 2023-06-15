@@ -2,8 +2,6 @@ import SecretGoods from "./SecretGoods";
 import { useContext } from "react";
 import { ThemeContext } from "../pages/SecretShop";
 
-
-
 function Main () {
     const {cards, setCards} = useContext(ThemeContext);
 

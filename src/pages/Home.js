@@ -3,20 +3,18 @@ import { useEffect } from "react";
 let date = new Date();
 let hour, minutes, sec = 0;
 let m, h = 0;
-getDate(date);
 
+getDate(date);
 liveTime ();
-// setInterval(liveTime, 1000);
 
 function getDate (date) {
-    hour = date.getHours() < 9 ? '0' + date.getHours() : date.getHours();
-    minutes = date.getMinutes() < 9 ? '0' + date.getMinutes() : date.getMinutes();
-    sec = date.getSeconds();
+  hour = date.getHours();
+  minutes = date.getMinutes();
+  sec = date.getSeconds();
 }
 
 function liveTime () {
-    hour = hour - 0;
-    minutes = minutes - 0;
+
     sec++
     if (sec > 59) {
         minutes++;
@@ -26,8 +24,8 @@ function liveTime () {
         hour++;
         minutes = 0;
     }
-      m = minutes < 10 ? "0" + minutes : minutes;
-      h = hour < 10 ? "0" + hour : hour;
+    m = minutes < 10 ? "0" + minutes : minutes;
+    h = hour < 10 ? "0" + hour : hour;
 }
 
 function Home () {
